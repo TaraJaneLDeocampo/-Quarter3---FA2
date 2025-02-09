@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script src="FA2.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+    <div class="calculator">
+<h1>calcU</h1>
+<p>
+    <i>This calculator allows you to find the remainder of two numbers as well as their sum, difference, product, and quotient. </i> <br> 
+</p>
+
+<p>
+    Welcome to calcU! Basic arithmetic calculations can be performed with this calculator. To view the outcome, enter two integers in the fields below and then click on an operation button.
+</p>
+
+<input type="text" id="num1" value="Num 1">
+<input type="text" id="num2" value="Num 2">
+<br> <br>
+
+<button onclick="(add(parseInt(num1.value), parseInt(num2.value)))">+</button>
+<button onclick="(sub(parseInt(num1.value), parseInt(num2.value)))">-</button>
+<button onclick="(mul(parseInt(num1.value), parseInt(num2.value)))">*</button> 
+<button onclick="(div(parseInt(num1.value), parseInt(num2.value)))">/</button>
+<button onclick="(rem(parseInt(num1.value), parseInt(num2.value)))">%</button>
+
+
+<p id="ans">Results will be displayed here.</p>
+</div>
+</body>
+</html>
+
